@@ -16,6 +16,7 @@ jobs:
 
       - name: Fix Missing KernelSU
         run: |
+          rm -rf drivers/kernelsu
           mkdir -p drivers/kernelsu
           curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
 
